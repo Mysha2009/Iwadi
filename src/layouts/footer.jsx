@@ -9,7 +9,8 @@ const Footer = () => {
         {/* Logo */}
         <div className="mb-4">
           <img
-            src="./assets/logo3"
+            style={{height: '100px'}}
+            src="src\assets\logo3.png"
             alt="Logo"
             className="h-12 w-auto mx-auto"
           />

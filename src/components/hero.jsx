@@ -23,11 +23,11 @@ const Hero = () => {
 
         {/* Logos des partenaires */}
         <div className="flex justify-center items-center gap-8">
-          <img src="/logo1.png" alt="Partenaire 1" className="h-12" />
-          <img src="/logo2.png" alt="Partenaire 2" className="h-12" />
-          <img src="/logo3.png" alt="Partenaire 3" className="h-12" />
-          <img src="/logo4.png" alt="Partenaire 4" className="h-12" />
-          <img src="/logo5.png" alt="Partenaire 5" className="h-12" />
+          <img src="src/assets/Isheero_521x142-px-480x131.png" alt="Partenaire 1" className="h-12" />
+          <img src="src\assets\Logo-ATUT.png" alt="Partenaire 2" className="h-12" />
+          <img src="src\assets\LOGO-RINTIO.png" alt="Partenaire 3" className="h-12" />
+          <img src="src\assets\official_logo.png" alt="Partenaire 4" className="h-12" />
+          <img src="src\assets\0022912001567859516.png" alt="Partenaire 5" className="h-12" />
         </div>
       </div>
     </section>

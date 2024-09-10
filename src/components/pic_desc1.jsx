@@ -3,20 +3,14 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 
 
-function Pic_desc() {
+function Pic_desc1() {
   
     return (
       <div>
       
         <div class="flex min-h-screen items-center justify-center">
           <div class="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-            <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
-              <img
-                src="src\assets\image.png"
-                alt="image"
-                class="h-full w-full object-cover"
-              />
-            </div>
+            
             <div style={{textAlign: 'left'}} class="p-6">
               <h1 class="mb-2 block font-sans text-4xl font-semibold leading-snug tracking-normal text-black antialiased">
                 Choisissez la filiere <br /> qui vous correspond
@@ -51,13 +45,20 @@ function Pic_desc() {
                 </button>
               </a>
             </div>
+            <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+              <img
+                src="src\assets\image.png"
+                alt="image"
+                class="h-full w-full object-cover"
+              />
+            </div>
           </div>
+          
         </div>
-        <div class="flex items-center justify-center">
-        </div>
+        
       </div>
   
     )
   }
   
-  export default Pic_desc
+  export default Pic_desc1

@@ -5,8 +5,8 @@ const Navbar = () => {
     <nav className="bg-white shadow-md py-4">
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo à gauche */}
-        <div className="text-2xl font-bold text-blue-600">
-          Logo
+        <div className="text-xl font-bold text-blue-600">
+          <img style={{height: '100px'}} src="src\assets\logo3.png" alt="" />
         </div>
 
         {/* Menus au centre */}
