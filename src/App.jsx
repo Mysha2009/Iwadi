@@ -1,10 +1,14 @@
 import { useState } from 'react'
+import HomePage from "./pages/home";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {
   createBrowserRouter,
   RouterProvider,
+  BrowserRouter,
+  Routes,
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -14,7 +18,7 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path=".." element={<Accueil />}> </Route>
+        <Route path="/" element={<HomePage />}/>
       </Routes>
     </BrowserRouter>
     </div>

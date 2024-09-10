@@ -1,5 +1,5 @@
 import React from "react";
-import logo3 from '../assets';
+// import logo3 from '../assets';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Footer = () => {
