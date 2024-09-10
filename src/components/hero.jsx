@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -16,9 +17,11 @@ const Hero = () => {
 
         {/* Bouton Commencer maintenant */}
         <div className="flex justify-center mb-10">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-lg">
+        <Link to="/FormPage"><button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-lg">
             Commencer maintenant
           </button>
+            </Link>
+          
         </div>
 
         {/* Logos des partenaires */}
