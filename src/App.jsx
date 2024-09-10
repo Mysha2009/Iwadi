@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -15,7 +16,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path=".." element={<Accueil />}> </Route>
-      </Routes>
+      </Routes>.
     </BrowserRouter>
     </div>
   )
