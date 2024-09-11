@@ -78,7 +78,7 @@ const SearchResults = () => {
             key={index}
             className="w-full sm:w-1/2 lg:w-1/3 bg-white p-6 rounded-lg shadow-lg border"
           >
-            <h2 className="text-2xl text-black font-semibold mb-4 text-center">{resultat.category}</h2>
+            <h2 className="text-2xl text-black font-semibold mb-4 text-center">{resultat.type}</h2>
 
             {/* Timeline */}
             <div className="relative">
@@ -89,7 +89,9 @@ const SearchResults = () => {
                     <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-1.5 top-1"></div>
                     {/* Contenu du parcours */}
                     <h3 className="text-lg font-semibold text-black">{parcours.niveau}</h3>
-                    <p className="text-gray-700">{parcours.filiere}</p>
+                    <p className="text-gray-700 font-semibold">{parcours.filière}</p>
+                    <p className="text-gray-700">{parcours.écoles}</p>
+                    <p className="text-gray-700">{parcours.domaine}</p>
                   </div>
                 ))}
               </div>

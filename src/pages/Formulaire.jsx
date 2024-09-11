@@ -154,12 +154,12 @@ const FormPage = () => {
 
           {/* Bouton Soumettre */}
           {step === 3 && (
-            <button
-              onClick={onSubmit}
+            <Link
+              to="/SearchResults"
               className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 ml-auto"
             >
               Soumettre
-            </button>
+            </Link>
           )}
         </div>
       </div>

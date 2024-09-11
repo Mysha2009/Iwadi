@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -27,9 +28,10 @@ const Navbar = () => {
 
         {/* Bouton à droite */}
         <div>
+        <Link to="/FormPage">
           <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
             Commencer Gratuitement
-          </button>
+          </button></Link>
         </div>
       </div>
     </nav>

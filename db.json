@@ -1,53 +1,78 @@
 { "data": [
     {
-        "id": 1,
-      "category": "Excellence",
-      "formations": [
-        {
-            "id": 1,
-          "niveau": "Licence",
-          "filiere": "Licence statistique",
-          "ecoles": [
-            "African School of Economics",
-            "Ecole Nationale d'Economie "
-          ],
-          "domaine": "Statistiques & Economie",
-          "description": null
-        }
-      ]
+        "type": "Parcours Excellence",
+        "formations": [
+            {
+                "niveau": "Licence",
+                "filière": "Statistique",
+                "écoles": "Université d'Abomey-Calavi, École Nationale d'Administration et de Magistrature",
+                "domaine": "Sciences",
+                "description": null
+            },
+            {
+                "niveau": "Master",
+                "filière": "Data Scientist",
+                "écoles": "École Supérieure de Gestion et de Technologie, Institut Universitaire d'Abomey-Calavi",
+                "domaine": "Informatique",
+                "description": null
+            }
+        ]
     },
     {
-        "id": 2,
-      "category": "Ecole privée",
-      "formations": [
-        {
-            "id": 1,
-          "niveau": "Licence",
-          "filiere": "Licence statistique",
-          "ecoles": [
-            "African School of Economics",
-            "Ecole Nationale d'Economie "
-          ],
-          "domaine": "Statistiques & Economie",
-          "description": null
-        }
-      ]
+        "type": "Parcours Public",
+        "formations": [
+            {
+                "niveau": "Licence",
+                "filière": "Statistique",
+                "écoles": "Université d'Abomey-Calavi, Université de Parakou",
+                "domaine": "Sciences",
+                "description": null
+            },
+            {
+                "niveau": "Master",
+                "filière": "Data Scientist",
+                "écoles": "Institut Universitaire d'Abomey-Calavi, École Nationale d'Administration et de Magistrature",
+                "domaine": "Informatique",
+                "description": null
+            }
+        ]
     },
     {
-        "id": 3,
-      "category": "Ecole privée",
-      "formations": [
-        {
-            "id": 1,
-          "niveau": "Licence",
-          "filiere": "Licence statistique",
-          "ecoles": [
-            "African School of Economics",
-            "Ecole Nationale d'Economie "
-          ],
-          "domaine": "Statistiques & Economie",
-          "description": null
-        }
-      ]
+        "type": "Parcours Privé",
+        "formations": [
+            {
+                "niveau": "Licence",
+                "filière": "Statistique",
+                "écoles": "École Supérieure de Gestion et de Technologie, Institut des Hautes Études Commerciales",
+                "domaine": "Sciences",
+                "description": null
+            },
+            {
+                "niveau": "Master",
+                "filière": "Data Scientist",
+                "écoles": "École Supérieure de Gestion et de Technologie, Institut des Hautes Études Commerciales",
+                "domaine": "Informatique",
+                "description": null
+            }
+        ]
+    },
+    {
+        "type": "Parcours Normal",
+        "formations": [
+            {
+                "niveau": "Licence",
+                "filière": "Statistique",
+                "écoles": "Université d'Abomey-Calavi, Université de Parakou, École Nationale d'Administration et de Magistrature",
+                "domaine": "Sciences",
+                "description": null
+            },
+            {
+                "niveau": "Master",
+                "filière": "Data Scientist",
+                "écoles": "Institut Universitaire d'Abomey-Calavi, École Nationale d'Administration et de Magistrature, École Supérieure de Gestion et de Technologie",
+                "domaine": "Informatique",
+                "description": null
+            }
+        ]
     }
-  ]}
+]}
