@@ -1,0 +1,53 @@
+{ "data": [
+    {
+        "id": 1,
+      "category": "Excellence",
+      "formations": [
+        {
+            "id": 1,
+          "niveau": "Licence",
+          "filiere": "Licence statistique",
+          "ecoles": [
+            "African School of Economics",
+            "Ecole Nationale d'Economie "
+          ],
+          "domaine": "Statistiques & Economie",
+          "description": null
+        }
+      ]
+    },
+    {
+        "id": 2,
+      "category": "Ecole privée",
+      "formations": [
+        {
+            "id": 1,
+          "niveau": "Licence",
+          "filiere": "Licence statistique",
+          "ecoles": [
+            "African School of Economics",
+            "Ecole Nationale d'Economie "
+          ],
+          "domaine": "Statistiques & Economie",
+          "description": null
+        }
+      ]
+    },
+    {
+        "id": 3,
+      "category": "Ecole privée",
+      "formations": [
+        {
+            "id": 1,
+          "niveau": "Licence",
+          "filiere": "Licence statistique",
+          "ecoles": [
+            "African School of Economics",
+            "Ecole Nationale d'Economie "
+          ],
+          "domaine": "Statistiques & Economie",
+          "description": null
+        }
+      ]
+    }
+  ]}

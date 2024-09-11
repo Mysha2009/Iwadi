@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from "../layouts/index";
 
 
 const SearchResults = () => {
   // Exemple de données pour les résultats
+  const [resultat, setResultat] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/data')
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setResultat(data);
+      });
+  }, [resultat]);
+  
   const results = [
     {
       id: 1,
@@ -60,23 +73,23 @@ const SearchResults = () => {
 
       {/* Grille pour les 3 premiers résultats */}
       <div className="flex flex-wrap justify-center gap-8">
-        {results.slice(0, 3).map((result) => (
+        {resultat.map((resultat, index) => (
           <div
-            key={result.id}
+            key={index}
             className="w-full sm:w-1/2 lg:w-1/3 bg-white p-6 rounded-lg shadow-lg border"
           >
-            <h2 className="text-2xl font-semibold mb-4 text-center">{result.title}</h2>
+            <h2 className="text-2xl text-black font-semibold mb-4 text-center">{resultat.category}</h2>
 
             {/* Timeline */}
             <div className="relative">
               <div className="border-l-2 border-gray-300">
-                {result.parcours.map((parcours, index) => (
+                {resultat.formations.map((parcours, index) => (
                   <div key={index} className="mb-8 pl-4 relative">
                     {/* Cercle sur la ligne */}
                     <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-1.5 top-1"></div>
                     {/* Contenu du parcours */}
-                    <h3 className="text-lg font-semibold">{parcours.nom}</h3>
-                    <p className="text-gray-700">{parcours.commentaire}</p>
+                    <h3 className="text-lg font-semibold text-black">{parcours.niveau}</h3>
+                    <p className="text-gray-700">{parcours.filiere}</p>
                   </div>
                 ))}
               </div>
@@ -89,36 +102,7 @@ const SearchResults = () => {
         ))}
       </div>
 
-      {/* Grille pour les 2 derniers résultats, centrés */}
-      <div className="flex flex-wrap justify-center gap-8 mt-8">
-        {results.slice(3).map((result) => (
-          <div
-            key={result.id}
-            className="w-full sm:w-1/2 lg:w-1/3 bg-white p-6 rounded-lg shadow-lg border"
-          >
-            <h2 className="text-2xl font-semibold mb-4 text-center">{result.title}</h2>
-
-            {/* Timeline */}
-            <div className="relative">
-              <div className="border-l-2 border-gray-300">
-                {result.parcours.map((parcours, index) => (
-                  <div key={index} className="mb-8 pl-4 relative">
-                    {/* Cercle sur la ligne */}
-                    <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-1.5 top-1"></div>
-                    {/* Contenu du parcours */}
-                    <h3 className="text-lg font-semibold">{parcours.nom}</h3>
-                    <p className="text-gray-700">{parcours.commentaire}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-600">
-              Voir plus
-            </button>
-          </div>
-        ))}
-      </div>
+      
     </div>
     </Layout>
   );
